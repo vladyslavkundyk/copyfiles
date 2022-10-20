@@ -10,7 +10,8 @@ import java.io.OutputStream;
 public class FileService {
 
 	public static long copyFile(File fileIn, File fileOut) throws IOException {
-		try (InputStream is = new FileInputStream(fileIn); OutputStream os = new FileOutputStream(fileOut)) {
+		try (InputStream is = new FileInputStream(fileIn);
+				OutputStream os = new FileOutputStream(fileOut)) {
 			return is.transferTo(os);
 		}
 	}
