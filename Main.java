@@ -11,11 +11,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		File folderIn = new File("D:\\kavo\\");
+		File folderIn = new File("D:\\folder1\\");
 
-		File folderOut = new File("D:\\kavo2\\");
+		File folderOut = new File("D:\\folder2\\");
 
-		// Тут ввести расширение файлов, которые нужно скопировать
+		// Тут указать расширение файлов, которые нужно скопировать
 		String ext = "doc";
 
 		try {
